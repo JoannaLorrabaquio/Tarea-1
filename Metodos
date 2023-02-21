@@ -1,0 +1,182 @@
+importjava.util.scanner;
+
+	public class MetodoLength {
+
+		public static void main (String [] args){
+			
+			String apellido = "Hernandez";
+			int longitud = apellido.length();
+			System.out.println(longitud);			
+			System.out.println(apellido);
+			String nombre = "Gerardo";
+			int longitudN = nombre.length();
+			System.out.println(longitudN);
+	}
+
+
+
+importjava.util.scanner;
+
+	public class MetodoIsEmpty {
+
+		public static void main (String [] args){
+
+			Lista<Integer> listaNum = new ArrayList<Integer>();
+			listaNum.add(5);
+			listaNum.add(10);
+			listaNum.add(15);
+			listaNum.clear();
+			boolean r=listaNum.isEmpty();
+
+			if(r==true) {
+				System.out.println("La lista esta vacia");
+			}else {
+				System.out.println("La lista no esta vacia");
+			}
+
+			booleean r2=listaNum.contains(10);
+			if(r2==true) {
+				System.out.println("Si contiene el elemento");
+			}else {
+				System.out.println("No contiene el elemento");
+			}
+
+			System.out.println( listaNum.size());
+			for (Integer x : listaNum) {
+				System.out.println(x);
+			}
+
+
+importjava.util.scanner;
+
+	public class MetodoEquals {
+
+		public static void main (String [] args){
+
+		string cadena 1;
+		string cadena 2;
+
+		cadena 1 = "carro";
+		cadena 2 = "carro";
+
+		if (cadena1.equals("carro")); {
+			System.out.println("Iguales");
+		}else{
+			System.out.println("Diferentes");
+	}
+
+
+
+importjava.util.scanner;
+
+	public class MetodoIndexOfYLastIndexOf {
+
+		public static void main (String [] args){
+			
+		Scanner sc = new Scanner (System.in);
+		String email = "joanna@gmail.com";
+		boolean r = email.startsWith("joa");
+		if(r==true) {
+		System.out.println("Si comienza");
+		}else {
+		System.out.println("No comienza");
+	}
+
+
+importjava.util.scanner;
+
+	public class MetodoToUpperCase {
+
+		public static void main (String [] args){
+
+		Scanner sc = new Scanner (System.in);
+		System.out.print("Ingrese su nombre");
+		String nombre = sc.nextLine();
+		String nombreNuevo = nombre.toUpperCase();
+		
+		System.out.println(nombre);
+		System.out.println(nombreNuevo);
+	}
+
+
+
+importjava.util.scanner;
+
+	public class MetodoToLowerCase {
+
+		public static void main (String [] args){
+		
+
+		Scanner sc = new Scanner (System.in);
+		System.out.print("Ingrese su nombre");
+		String nombre = sc.nextLine();
+		nombre = nombre.toLowerCase();
+		
+		System.out.println("Ingrese otro nombre");
+		String nombre2 = sc.nextLine();		
+		nombre2 = nombre2.toLowerCase();
+
+		if(nombre.equals(nombre2)) {
+		System.out.println("Son iguales");
+		}else {
+		System.out.println("No son iguales");
+
+	}
+
+
+
+importjava.util.scanner;
+
+	public class MetodoSubString {
+
+		public static void main (String [] args){
+
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Ingrese email");
+		String email = sc.nextLine();
+
+		String nuevoEmail = email.substring (3);
+		System.out.println(nuevoEmail);
+		nuevoEmail = email.substring(20, 50);
+		System.out.println(nuevoEmail);
+
+	}
+
+
+
+importjava.util.scanner;
+
+	public class MetodoParseInt {
+
+		public static void main (String [] args){
+
+		String numero = "-2";
+
+		try {
+			int tempNum = Integer.parseInt(numero);
+			System.out.println(tempNum);
+		} catch (Excepcion e) {
+			System.out.println("Numero no encontrado");
+	}
+}
+
+
+
+
+importjava.util.scanner;
+
+	public class MetodoStringBuilder {
+
+		public static void main (String [] args){
+
+		StringBuilder lenguaje = new StringBuilder();
+		lenguaje.append("Programación ");	
+		lenguaje.append("Orientada ");
+		lenguaje.append("a Objetos");
+		
+		System.out.println(lenguaje);
+
+		System.out.println(new StringBuilder().append("Programación ").append("Orientada ").append("a Objetos");
+	
+	}
+ }
